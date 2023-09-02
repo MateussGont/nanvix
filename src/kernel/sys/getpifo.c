@@ -17,21 +17,14 @@
  * along with Nanvix. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
+#include <nanvix/const.h>
+#include <nanvix/klib.h>
 
-/* Software versioning. */
-#define VERSION_MAJOR 1 /* Major version. */
-#define VERSION_MINOR 0 /* Minor version. */
-
-
-int main(int argc, char *const argv[])
+/*
+ * Gets the parent process ID of the calling process.
+ */
+PUBLIC int sys_getpifo(void)
 {
-    ((void)argc);
-    ((void)argv);
-
-	printf("Teste getpifo \n");
-    getpifo();
-	return (EXIT_SUCCESS);
+    kprintf("Teste Kernel world! \n");
+	return (0);
 }

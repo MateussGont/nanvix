@@ -265,6 +265,9 @@
 	 */
 	EXTERN int sys_gticks(void);
 
+	//implementa
+	EXTERN int sys_getpifo(void);
+
 #endif /* _ASM_FILE_ */
 
 #endif /* NANVIX_SYSCALL_H_ */
