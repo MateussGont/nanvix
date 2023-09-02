@@ -217,6 +217,8 @@
 
 	extern int shutdown(void);
 
+	extern int getpifo(void);
+
 	/*
 	 * Gets process information
 	 */
